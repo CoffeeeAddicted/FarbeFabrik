@@ -28,21 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Farbabfuellung));
             this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.cb_giftig = new System.Windows.Forms.CheckBox();
             this.cb_feuer = new System.Windows.Forms.CheckBox();
             this.pb_behaelter = new System.Windows.Forms.PictureBox();
-            this.pb_behaelter_2 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pb_behaelter)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_behaelter_2)).BeginInit();
             this.SuspendLayout();
             // 
             // cb_giftig
             // 
             this.cb_giftig.AutoSize = true;
-            this.cb_giftig.Location = new System.Drawing.Point(36, 21);
+            this.cb_giftig.Location = new System.Drawing.Point(27, 17);
+            this.cb_giftig.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb_giftig.Name = "cb_giftig";
-            this.cb_giftig.Size = new System.Drawing.Size(122, 21);
+            this.cb_giftig.Size = new System.Drawing.Size(94, 17);
             this.cb_giftig.TabIndex = 1;
             this.cb_giftig.Text = "Farbe ist giftig!";
             this.cb_giftig.UseVisualStyleBackColor = true;
@@ -51,9 +51,10 @@
             // cb_feuer
             // 
             this.cb_feuer.AutoSize = true;
-            this.cb_feuer.Location = new System.Drawing.Point(36, 48);
+            this.cb_feuer.Location = new System.Drawing.Point(27, 39);
+            this.cb_feuer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb_feuer.Name = "cb_feuer";
-            this.cb_feuer.Size = new System.Drawing.Size(187, 21);
+            this.cb_feuer.Size = new System.Drawing.Size(142, 17);
             this.cb_feuer.TabIndex = 2;
             this.cb_feuer.Text = "Farbe ist feuergefährlich!";
             this.cb_feuer.UseVisualStyleBackColor = true;
@@ -61,35 +62,30 @@
             // 
             // pb_behaelter
             // 
-            this.pb_behaelter.Location = new System.Drawing.Point(80, 113);
+            this.pb_behaelter.BackColor = System.Drawing.SystemColors.Window;
+            this.pb_behaelter.ErrorImage = null;
+            this.pb_behaelter.Image = ((System.Drawing.Image)(resources.GetObject("pb_behaelter.Image")));
+            this.pb_behaelter.InitialImage = null;
+            this.pb_behaelter.Location = new System.Drawing.Point(141, 115);
+            this.pb_behaelter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pb_behaelter.Name = "pb_behaelter";
-            this.pb_behaelter.Size = new System.Drawing.Size(320, 320);
+            this.pb_behaelter.Size = new System.Drawing.Size(265, 266);
             this.pb_behaelter.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_behaelter.TabIndex = 3;
             this.pb_behaelter.TabStop = false;
             // 
-            // pb_behaelter_2
-            // 
-            this.pb_behaelter_2.Location = new System.Drawing.Point(406, 113);
-            this.pb_behaelter_2.Name = "pb_behaelter_2";
-            this.pb_behaelter_2.Size = new System.Drawing.Size(320, 320);
-            this.pb_behaelter_2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_behaelter_2.TabIndex = 4;
-            this.pb_behaelter_2.TabStop = false;
-            // 
             // Farbabfuellung
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(767, 540);
-            this.Controls.Add(this.pb_behaelter_2);
+            this.ClientSize = new System.Drawing.Size(575, 439);
             this.Controls.Add(this.pb_behaelter);
             this.Controls.Add(this.cb_feuer);
             this.Controls.Add(this.cb_giftig);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Farbabfuellung";
             this.Text = "Farbabfüllung";
             ((System.ComponentModel.ISupportInitialize)(this.pb_behaelter)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_behaelter_2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,7 +97,6 @@
         private System.Windows.Forms.CheckBox cb_giftig;
         private System.Windows.Forms.CheckBox cb_feuer;
         private System.Windows.Forms.PictureBox pb_behaelter;
-        private System.Windows.Forms.PictureBox pb_behaelter_2;
     }
 }
 
